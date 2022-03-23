@@ -3,22 +3,26 @@
     margin:0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 /* HEADER  */
 header{
     background-color:#3161e0;
+    width: 100%;
 }
 
-.container{
+.header-container{
     margin: auto;
     max-width: 1280px;
     padding: 20px 0;  
 }
 
-.logo-discord, .link, .login{
+.logo-discord, .link, .btn-login{
     vertical-align: middle;
 }
 
-.logo-discord, .login{
+.logo-discord, .btn-login{
     display:inline-block;
 }
 
@@ -27,9 +31,9 @@ nav{
     padding: 0 250px;
 }
 
-.login{
+.btn-login{
     padding:10px;
-    border-radius: 30px;
+    border-radius: 40px;
     border:none;
 }
 
@@ -42,3 +46,45 @@ nav{
 }
  /* HEADER  */
 
+/* HERO  */
+
+.hero-container{
+    background-image: url(../img/jumbo.png);
+    height:650px;
+    background-size: cover;
+    text-align:center;
+}
+
+.title{
+    padding-top:150px;
+    margin: 0 auto;
+    color:white;
+    font-size: 30px;
+    margin-bottom:30px;
+}
+
+.description{
+    height:100px;
+    max-width:900px;
+    margin: 0 auto;
+    color:white;
+    font-size:25px; 
+}
+
+.download{
+    margin-top: 80px;
+}
+
+.download .btn-white, .btn-black{
+    padding:20px 50px;
+    border-radius: 40px;
+    margin-right: 20px;
+    font-size:20px;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-black{
+    color: white;
+    background-color: #23272a;
+}
