@@ -9,7 +9,6 @@ body{
 /* HEADER  */
 header{
     background-color:#3161e0;
-    width: 100%;
 }
 
 .header-container{
@@ -51,7 +50,8 @@ nav{
 .hero-container{
     background-image: url(../img/jumbo.png);
     height:650px;
-    background-size: cover;
+    background-size:cover;
+    background-repeat: no-repeat;
     text-align:center;
 }
 
@@ -87,4 +87,71 @@ nav{
 .btn-black{
     color: white;
     background-color: #23272a;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4{
+    float: left;
+    width: 50%;
+}
+
+.col-2, .col-3{
+    padding-left: 200px;
+}
+    
+.img-1 {
+    width: 100%;
+    display: block;
+}
+
+.img-2{
+    width: 100%;
+    display: block;
+
+}
+
+#top, #center, #bottom{
+    width: 1280px;
+    margin: auto;
+}
+
+.first{
+    margin-top:100px;
+    width: 100%;
+}
+
+.second{
+    margin-top:130px;
+    width: 50%; 
+
+}
+
+h2{
+    width: 300px;
+    font-size: 50px;
+}
+
+#center{
+    margin-top:200px;   
+}
+
+.paragraph{
+    width: 300px;
+    font-size:20px;
+    margin-top:30px;
+}
+
+    
+#bottom{
+    margin-top: 200px;
+    background-color: white;
+}
+
+main{
+    margin:auto;
 }
